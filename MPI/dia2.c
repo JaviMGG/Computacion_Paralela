@@ -274,6 +274,7 @@ void desplazar(double vloc[], int mb)
     int myid, nprocesos, next, prev;
     MPI_Comm_size(MPI_COMM_WORLD, &nprocesos);
     MPI_Comm_rank(MPI_COMM_WORLD, &myid);
+
     // si soy primero
     if (myid == 0)
     {
@@ -283,6 +284,7 @@ void desplazar(double vloc[], int mb)
     {
         prev = myid - 1;
     }
+    
     // si soy ultimo
     if (myid == nprocesos - 1)
     {
