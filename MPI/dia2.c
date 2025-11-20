@@ -1,3 +1,5 @@
+#include <mpi.h>
+
 /**
  * Modo de Envio estándar:
  * MPI_Send(buf, count, datatype, dest, tag, comm)

@@ -1,3 +1,5 @@
+#include <mpi.h>
+
 /**
  * En MPI se abren todos los procesos desde el minuto cero
  * 
