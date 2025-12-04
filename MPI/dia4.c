@@ -226,6 +226,6 @@ int ejercicio2_17(int argc, char *argv[]){
     if(myid == 0)
         EscribirOperandos(C);
     
-    MPI_Finalize();
+    MPI_Finalize(); //SI ESTAMOS EN MAIN, SE PONE ESTA LINEA
     return 0;
 }
